@@ -1,0 +1,14 @@
+bool isPalindrome(int x) {
+      
+string str = to_string(x); // конвертация в строку
+int len = str.length(); // узнаём длину строки
+for (int i = 0; i < len; i++) // запускаем цикл от 0 до str_length - 1 
+{
+ if (str[i] != str[len - 1 - i]) {
+ return false;
+ }
+}
+ return true;
+               
+  }
+};
